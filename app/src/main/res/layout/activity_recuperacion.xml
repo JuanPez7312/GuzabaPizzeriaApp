@@ -13,7 +13,8 @@
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login_title"
+        android:text="@string/recuperacion_tittle"
+        android:textAlignment="center"
         android:textSize="34sp"
         android:textStyle="bold"
         android:textColor="@color/white"
@@ -69,64 +70,33 @@
         app:layout_constraintHorizontal_bias="0.5"
         app_layout_constraintVertical_bias="0.5">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        tools:layout_editor_absoluteX="138dp"
-        tools:layout_editor_absoluteY="454dp">
-
-        <EditText
-            android:id="@+id/editTextEmail"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            android:hint="@string/email_hint" />
+            android:padding="16dp"
+            tools:layout_editor_absoluteX="138dp"
+            tools:layout_editor_absoluteY="454dp">
 
-        <EditText
-            android:id="@+id/editTextPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/editTextEmail"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="@color/black"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            android:hint="@string/password_hint"
-            android:inputType="textPassword" />
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:hint="@string/email_hint" />
 
-        <Button
-            android:id="@+id/btnLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/editTextPassword"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="@color/green"
-            android:text="@string/login_button" />
+            <Button
+                android:id="@+id/btnRecuperar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextEmail"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/green"
+                android:text="@string/recuperacion" />
 
-        <Button
-            android:id="@+id/btnRegister"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/editTextPassword"
-            android:layout_marginStart="158dp"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="@color/green"
-            android:text="@string/register_button" />
-
-        <Button
-            android:id="@+id/btnRecuperar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/editTextPassword"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="70dp"
-            android:backgroundTint="@color/green"
-            android:text="@string/recuperacion" />
-
-    </RelativeLayout>
-    ></com.google.android.material.card.MaterialCardView>
+        </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

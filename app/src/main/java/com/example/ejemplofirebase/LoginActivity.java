@@ -23,6 +23,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText passwordEditText;
     private Button loginButton;
     private Button registerButton;
+    private Button recuperacionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +31,24 @@ public class LoginActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login);
 
+        //Inicializamos el autenticador
         mAuth = FirebaseAuth.getInstance();
 
+        //Linkeamos los valores con la interfaz
         emailEditText = findViewById(R.id.editTextEmail);
         passwordEditText = findViewById(R.id.editTextPassword);
         loginButton = findViewById(R.id.btnLogin);
         registerButton = findViewById(R.id.btnRegister);
+        recuperacionButton = findViewById(R.id.btnRecuperar);
+
+        recuperacionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, RecuperacionActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override

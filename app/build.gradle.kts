@@ -46,7 +46,8 @@ dependencies {
     // Firebase Core and Analytics
     implementation("com.google.firebase:firebase-core:21.1.1")
     implementation("com.google.firebase:firebase-analytics")
-// Firebase Authentication and Firestore
+    // Firebase Authentication and Firestore
+    implementation ("com.google.firebase:firebase-auth:22.0.0")
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-firestore")
     implementation("com.google.firebase:firebase-database:21.0.0")
