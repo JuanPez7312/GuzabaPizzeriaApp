@@ -1,16 +1,22 @@
 <resources>
-    <string name="app_name">ejemploFirebase</string>
+    <string name="app_name">Pizzeria Guzaba</string>
     <string name="login_title">Inicio de sesión</string>
     <string name="register_title">Registro de usuario</string>
     <string name="email_hint">Correo electrónico</string>
     <string name="password_hint">Contraseña</string>
     <string name="login_button">Iniciar sesión</string>
     <string name="register_button">Registrar</string>
-    <string name="volver">Volver</string>
     <string name="name_hint">Nombre</string>
+    <string name="descripcion_hint">Descripción</string>
+    <string name="precio_hint">Precio</string>
+    <string name="tamanio_hint">Tamaño</string>
     <string name="register_button_text">Registrar</string>
-    <string name="login_button_text">Login</string>
+    <string name="agregar_button_text">Agregar</string>
+    <string name="login_button_text">Ingresar</string>
     <string name="recuperacion">Recuperar Contraseña</string>
     <string name="recuperacion_tittle">Recuperaración Contraseña</string>
-
+    <string name="titulo_inicio_admin">Productos</string>
+    <string name="titulo_agregar_producto">Agregar Nuevo Producto</string>
+    <string name="volver_button_text">Volver al inicio</string>
+    <string name="todo">TODO</string>
 </resources>

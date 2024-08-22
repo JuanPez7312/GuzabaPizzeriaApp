@@ -15,10 +15,25 @@
         android:theme="@style/Theme.EjemploFirebase"
         tools:targetApi="31">
         <activity
+            android:name=".ClientesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuscarId"
+            android:exported="false" />
+        <activity
+            android:name=".PerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InicioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VistaBase"
+            android:exported="false" />
+        <activity
             android:name=".RecuperacionActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".AgregarActivity"
             android:exported="false" />
         <activity
             android:name=".Register"
